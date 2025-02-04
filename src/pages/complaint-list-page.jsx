@@ -16,7 +16,7 @@ const ComplaintListPage = () => {
   const [municipalityId] = useState('garden-city-ut')
 
   const fetchComplaints = async () => {
-    const url = `https://api.us-east.aws.tinybird.co/v0/pipes/complaint_table_dev_pipe_1488.json?municipality_id=${municipalityId}&token=${import.meta.env.VITE_REACT_APP_TINYBIRD_API_KEY}`
+    const url = `https://api.us-east.aws.tinybird.co/v0/pipes/complaint_table_dev_list.json?municipality_id=${municipalityId}&token=${import.meta.env.VITE_REACT_APP_TINYBIRD_API_KEY}`
     console.log(url)
     try {
       const response = await fetch(url)
